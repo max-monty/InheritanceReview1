@@ -1,18 +1,45 @@
-## Getting Started
+# Java Inheritance Review - Day 1
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains exercises and examples for reviewing Java inheritance concepts.
 
-## Folder Structure
+## Project Overview
 
-The workspace contains two folders by default, where:
+This project serves as a practical review of inheritance concepts in Java, a core principle of object-oriented programming. It contains two main examples:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. **Basic Inheritance Demo** (`DoNow.java`)  
+   A simple demonstration of class inheritance showing how method overriding works in Java.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. **Tech Company Simulation** (`TechCompany/` package)  
+   A more complex example modeling employees in a tech company with inheritance relationships:
+   - `Employee` - Base class with common employee attributes and methods
+   - `Developer` - Specialized employee type (to be implemented)
+   - `Manager` - Specialized employee type (to be implemented)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Project Structure
 
-## Dependency Management
+```
+.
+├── bin/           # Compiled class files
+├── lib/           # External libraries
+├── src/           # Source code
+│   ├── DoNow.java # Basic inheritance example
+│   └── TechCompany/
+│       ├── Employee.java    # Base class
+│       ├── Developer.java   # Subclass (to be implemented)
+│       ├── Manager.java     # Subclass (to be implemented)
+│       └── CompanyDemo.java # Demo application
+└── README.md      # Project documentation
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Learning Objectives
+
+- Understanding inheritance in object-oriented programming
+- Implementing class hierarchies
+- Method overriding and polymorphism
+- Dynamic binding in Java
+
+## Next Steps
+
+1. Complete the `Developer` class to extend `Employee` with developer-specific attributes and methods
+2. Complete the `Manager` class to extend `Employee` with manager-specific attributes and methods
+3. Uncomment the code in `CompanyDemo.java` to test your implementation
